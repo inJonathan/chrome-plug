@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "消息测试",
+    "version": "1.0",
+    "description": "消息测试",
+    "browser_action": {
+        "default_title": "消息测试"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "js/jquery.js",
+                "js/content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "contextMenus"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
