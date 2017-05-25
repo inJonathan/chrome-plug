@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "消息测试",
+    "name": "消息测试1",
     "version": "1.0",
-    "description": "消息测试",
+    "description": "popup和content的通信",
     "browser_action": {
-        "default_title": "消息测试"
+        "default_title": "消息测试1"
     },
     "content_scripts": [
         {

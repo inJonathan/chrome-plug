@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "消息测试2",
+    "version": "1.0",
+    "description": "background和content的通信",
+    "browser_action": {
+        "default_title": "消息测试2"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "js/jquery.js",
+                "js/content.js"
+            ]
+        }
+    ],
+    "background": {
+        "page": "background.html"
+    }
+}
